@@ -1,0 +1,23 @@
+ul,
+h1,
+h2,
+h3,
+h4,
+p,
+img {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
