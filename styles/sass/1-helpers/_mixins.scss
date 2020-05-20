@@ -1,0 +1,16 @@
+@mixin headings($font-size, $line-height, $letter-spacing){
+    font-family: "Walter Turncoat", cursive;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $primary-text;
+}
+
+@mixin secondary($line-height, $font-weight){
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    letter-spacing: 1px;
+    color:  $primary-text;
+}

@@ -250,11 +250,74 @@ ul {
   list-style: none;
 }
 
-li {
+a {
   text-decoration: none;
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+html {
+  font-size: 63.5%;
+}
+
+.background-a {
+  background-color: #03697C;
+}
+
+.background-b {
+  background-color: #474BB5;
+}
+
+h1 {
+  font-family: "Walter Turncoat", cursive;
+  font-size: 14.52rem;
+  line-height: auto;
+  letter-spacing: auto;
+  color: #F3FAFF;
+}
+
+h2 {
+  font-family: "Walter Turncoat", cursive;
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+  letter-spacing: auto;
+  color: #F3FAFF;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  padding: 1.5rem;
+}
+
+header {
+  background-image: url(../../../assets/home-box-header.jpg);
+}
+
+footer {
+  background-color: #044799;
 }
