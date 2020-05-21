@@ -263,6 +263,12 @@ html {
   font-size: 63.5%;
 }
 
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .background-a {
   background-color: #03697C;
 }
@@ -316,8 +322,99 @@ a {
 
 header {
   background-image: url(../../../assets/home-box-header.jpg);
+  background-color: cadetblue;
+}
+
+.road-trip {
+  text-align: center;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: transparent;
 }
 
 footer {
   background-color: #044799;
+  text-align: center;
+}
+
+.card-container {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: auto;
+          flex-direction: auto;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid yellow;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+.card-container .card div:first-child {
+  border: 1px solid orchid;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 2rem;
+}
+
+.card-container .card div:first-child i {
+  font-size: 2rem;
+  color: #474BB5;
+  background-color: #08FDED;
+  padding: 1.5rem;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid orangered;
+}
+
+.card-container .card div:last-child {
+  border: 1px solid indigo;
+}
+
+.card-container .card div:last-child h2 {
+  border: 1px solid orange;
 }

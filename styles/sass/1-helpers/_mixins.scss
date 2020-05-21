@@ -14,3 +14,29 @@
     letter-spacing: 1px;
     color:  $primary-text;
 }
+
+@mixin icons{
+    font-size: 2rem;
+    color: $secondary;
+    background-color: $hilight;
+    padding: 1.5rem;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin form($background-colour){
+    display: flex;
+    flex-direction: column;
+    background-color: $background-colour;
+}
+
+@mixin flex($flex, $direction, $justify, $align-items){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align-items;
+}
