@@ -1,3 +1,28 @@
-.programs-and-location{
-    @include flex(flex, row, auto, auto)
+.programs-and-location {
+  @include flex(flex, row, space-between, auto);
+  padding: 3rem 0;
+  position: relative;
+    div {
+        img {
+        position: absolute;
+        width: 50%;
+        }
+        .programs-img {
+        @include box-shadow(20px, 20px);
+        top: -2.5rem;
+        }
+        .locations-img {
+        @include box-shadow(-20px, 20px);
+        right: 0;
+        bottom: -2.5rem;
+        }
+    }
+    .programs,
+    .locations {
+            width: 40%;
+    }
+    .locations {
+    @include flex(flex, column, auto, flex-end);
+    text-align: right;
+    }
 }
