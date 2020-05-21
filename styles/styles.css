@@ -481,6 +481,11 @@ form {
   -webkit-box-align: auto;
       -ms-flex-align: auto;
           align-items: auto;
+  padding: 8rem 0;
+}
+
+.gallery li:nth-child(2) {
+  margin: 0 5rem;
 }
 
 footer {
