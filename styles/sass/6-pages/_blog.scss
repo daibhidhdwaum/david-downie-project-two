@@ -1,4 +1,13 @@
-.blog
-.contact{
+.blog{
     @include flex(flex, row, auto, auto);
+}
+
+.contact{
+    background-color: $primary;
+    border: 10px solid purple;
+    @include flex(flex, auto, auto, auto)
+}
+
+.contact-page{
+    background: $primary;
 }

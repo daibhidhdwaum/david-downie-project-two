@@ -586,15 +586,60 @@ ul li a {
 form {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   background-color: #03697C;
+  width: 60%;
 }
 
-form input {
-  color: transparent;
+form input::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 1px;
+  letter-spacing: 1px;
+  color: #F3FAFF;
 }
 
-.blog
-.contact {
+form input:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 1px;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+}
+
+form input::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 1px;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+}
+
+form input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 1px;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+}
+
+address {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 1px;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+  border: 1px solid red;
+  font-style: normal;
+}
+
+.blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,4 +653,26 @@ form input {
   -webkit-box-align: auto;
       -ms-flex-align: auto;
           align-items: auto;
+}
+
+.contact {
+  background-color: #03697C;
+  border: 10px solid purple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: auto;
+          flex-direction: auto;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+}
+
+.contact-page {
+  background: #03697C;
 }
