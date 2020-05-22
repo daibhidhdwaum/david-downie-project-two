@@ -1,0 +1,6 @@
+form{
+    @include form($primary);
+    input{
+        color: transparent;
+    }
+}

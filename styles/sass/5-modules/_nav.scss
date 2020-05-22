@@ -1,0 +1,11 @@
+   ul{
+       width: 40%;
+       @include flex(flex, row, space-between, center);
+       li{
+        display: inline-block;
+         a{  
+            display: inline-block;
+            padding: 2rem 2rem 2rem 0;
+        }
+    }
+}

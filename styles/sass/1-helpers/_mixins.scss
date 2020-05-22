@@ -20,18 +20,17 @@
     font-size: 2rem;
     color: $secondary;
     background-color: $hilight;
-    padding: 1.5rem;
+    // padding: 1rem;
     border-radius: 50%;
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 @mixin form($background-colour){
-    display: flex;
-    flex-direction: column;
+    display: grid;
     background-color: $background-colour;
 }
 
