@@ -272,7 +272,6 @@ html {
   max-width: 700px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid orangered;
 }
 
 a {
@@ -425,8 +424,6 @@ footer {
   position: absolute;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
   background-color: #474BB5;
   top: -20rem;
   -ms-grid-columns: 1fr 1fr;
@@ -514,8 +511,6 @@ footer {
 .comment-form-container form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
   background-color: #03697C;
   top: -20rem;
   -ms-grid-columns: 1fr 1fr;
@@ -625,7 +620,6 @@ footer {
   -webkit-box-align: auto;
       -ms-flex-align: auto;
           align-items: auto;
-  border: 1px solid green;
 }
 
 .contact {

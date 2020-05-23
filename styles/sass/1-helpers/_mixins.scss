@@ -42,7 +42,6 @@
 
 @mixin form($background-colour, $input-background, $margin) {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   background-color: $background-colour;
   top: -20rem;
   grid-template-columns: 1fr 1fr;

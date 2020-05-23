@@ -1,7 +1,6 @@
 .blog{
     background-color: $primary;
     @include flex(flex, row, auto, auto);
-    border: 1px solid green;
 }
 
 .contact{
