@@ -40,14 +40,14 @@
   box-shadow: $horizontal-offset $vertical-offset 0 $hilight;
 }
 
-@mixin form($background-colour, $input-background) {
+@mixin form($background-colour, $input-background, $margin) {
   display: grid;
   grid-template-rows: 1fr 1fr;
   background-color: $background-colour;
   top: -20rem;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  margin: 4rem;
+  margin: $margin;
   padding: 6rem;
 
     input,

@@ -1,3 +1,17 @@
+.blog-section{
+  width: 70%;
+}
+
+.blog-post{
+  position: relative;
+  padding-top: 45rem;
+}
+
+.blog-post-image{
+  position: absolute;
+  top: -20rem;
+}
+
 .blog-post {
   border: 8px solid $hilight;
   border-right: none;
