@@ -1,0 +1,14 @@
+.new-activities {
+  border: 8px solid $hilight;
+  border-right: none;
+  border-top: none;
+  .image-container {
+    position: relative;
+    .image-container:first-child {
+      position: absolute;
+      @include box-shadow(-2rem, 2rem);
+      right: 0;
+      border: 10px solid yellow;
+    }
+  }
+}

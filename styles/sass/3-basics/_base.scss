@@ -6,11 +6,15 @@
 // }
 
 .wrapper{
-    max-width: 1300px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
 }
 
 a{
     display: inline-block;
+}
+
+main{
+    background-color: $primary;
 }

@@ -264,13 +264,17 @@ html {
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
 
 a {
   display: inline-block;
+}
+
+main {
+  background-color: #03697C;
 }
 
 .background-a {
@@ -714,14 +718,37 @@ aside {
   font-size: 2.8rem;
 }
 
+.new-activities {
+  border: 2px solid #08FDED;
+}
+
+.new-activities {
+  border: 8px solid #08FDED;
+  border-right: none;
+  border-top: none;
+}
+
+.new-activities .image-container {
+  position: relative;
+}
+
+.new-activities .image-container .image-container:first-child {
+  position: absolute;
+  -webkit-box-shadow: -2rem 2rem 0 #08FDED;
+          box-shadow: -2rem 2rem 0 #08FDED;
+  right: 0;
+  border: 10px solid yellow;
+}
+
 .blog {
+  background-color: #03697C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: auto;
       -ms-flex-pack: auto;
           justify-content: auto;

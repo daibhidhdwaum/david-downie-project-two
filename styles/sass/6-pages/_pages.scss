@@ -1,5 +1,7 @@
 .blog{
-    @include flex(flex, column, auto, auto);
+    background-color: $primary;
+    @include flex(flex, row, auto, auto);
+
 }
 
 .contact{
