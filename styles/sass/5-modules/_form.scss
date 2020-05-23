@@ -1,7 +1,0 @@
-form{
-    @include form($primary);
-    width:60%;
-    input::placeholder{
-        @include secondary(2.8rem, 1px);
-    }
-}

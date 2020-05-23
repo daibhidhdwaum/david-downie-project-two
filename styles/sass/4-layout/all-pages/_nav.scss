@@ -1,4 +1,4 @@
-   ul{
+ ul{
        width: 40%;
        @include flex(flex, row, space-between, center);
        li{
@@ -6,6 +6,10 @@
          a{  
             display: inline-block;
             padding: 2rem 2rem 2rem 0;
+        }
+        a:hover{
+            transform: scale(1.2);
+            transition: ease 0.5s;
         }
     }
 }
