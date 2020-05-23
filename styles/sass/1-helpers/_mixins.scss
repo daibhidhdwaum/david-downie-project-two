@@ -1,49 +1,84 @@
-@mixin headings($font-size, $line-height, $letter-spacing){
-    font-family: "Walter Turncoat", cursive;
-    font-size: $font-size;
-    line-height: $line-height;
-    letter-spacing: $letter-spacing;
-    color: $primary-text;
-    padding: .5rem;
+@mixin headings($font-size, $line-height, $letter-spacing) {
+  font-family: "Walter Turncoat", cursive;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $primary-text;
+  padding: 0.5rem 0;
 }
 
-@mixin secondary($line-height, $font-weight){
-    font-family: "Roboto", sans-serif;
-    font-size: 2rem;
-    line-height: $line-height;
-    font-weight: $font-weight;
-    letter-spacing: 1px;
-    color:  $primary-text;
+@mixin secondary($line-height, $font-weight) {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  letter-spacing: 1px;
+  color: $primary-text;
 }
 
-@mixin icons{
-    font-size: 2rem;
-    color: $secondary;
-    background-color: $hilight;
-    // padding: 1rem;
-    border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin icons {
+  font-size: 2rem;
+  color: $secondary;
+  background-color: $hilight;
+  // padding: 1rem;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@mixin form($background-colour){
-    // width: 50%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    // border: 1px solid red;
-    background-color: $background-colour;
+@mixin flex($flex, $direction, $justify, $align-items) {
+  display: $flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align-items;
 }
 
-@mixin flex($flex, $direction, $justify, $align-items){
-    display: $flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align-items;
+@mixin box-shadow($horizontal-offset, $vertical-offset) {
+  box-shadow: $horizontal-offset $vertical-offset 0 $hilight;
 }
 
-@mixin box-shadow($horizontal-offset, $vertical-offset){
-    box-shadow: $horizontal-offset $vertical-offset 0 $hilight;
+@mixin form($background-colour, $input-background) {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: $background-colour;
+  top: -20rem;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 4rem;
+  padding: 6rem;
+
+    input,
+    textarea {
+        @include secondary(auto, auto);
+        background: $input-background;
+        margin: 2rem;
+    }
+    input {
+        border: none;
+        border-bottom: 1px solid $primary-text;
+        height: 50px;
+        background: $input-background;
+    }
+
+    .message {
+        grid-column: 1 / -1;
+        border: 1px solid $primary-text;
+        height: 300px;
+        padding: 4rem 0 0 4rem;
+        resize: none;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        @include secondary(2.8rem, 1px);
+    }
+
+    button {
+        grid-column: 1 / -1;
+        margin: 0 2rem 2rem;
+        border: none;
+    }
 }

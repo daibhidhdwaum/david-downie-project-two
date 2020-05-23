@@ -1,0 +1,8 @@
+.blog-post {
+  border: 8px solid $hilight;
+  border-right: none;
+  border-top: none;
+    img {
+      @include box-shadow(-2rem, 2rem);
+    }
+  }

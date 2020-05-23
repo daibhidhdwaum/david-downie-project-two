@@ -16,9 +16,10 @@
 @import "./4-layout/all-pages/nav";
 @import "./4-layout/all-pages/footer";
 @import "./4-layout/all-pages/form";
-    // front-page
-@import "./4-layout/front-page/card";
+@import "./4-layout/all-pages/pages";
+// front-page
 @import "./4-layout/front-page/programs-and-locations";
+@import "./4-layout/front-page/card";
 @import "./4-layout/front-page/road-trip";
 @import "./4-layout/front-page/events";
 @import "./4-layout/front-page/gallery";
@@ -26,10 +27,6 @@
 @import "./4-layout/contact/contact-details";
     // blog
 @import "./4-layout/blog/mission";
-@import "./4-layout/blog/blog-container";
-@import "./4-layout/blog/new-activities";
-@import "./4-layout/blog/blog-posts";
-
-// 6-PAGES
-@import "./6-pages/pages";
+@import "./4-layout/blog/blog-post";
+@import "./4-layout/blog/comments";
 

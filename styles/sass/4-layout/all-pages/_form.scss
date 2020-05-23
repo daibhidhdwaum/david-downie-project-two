@@ -1,49 +1,18 @@
-.form-container {
-    position: relative;
-    width: 70%;
-  form {
-      position: absolute;
-      top: -20rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    @include form($secondary);
-    width: 100%;
-    margin: 4rem;
-    padding: 6rem;
-    @include box-shadow(2rem, 2rem);
-    input,
-    textarea {
-      @include secondary(auto, auto);
-      background: $secondary;
-      margin: 2rem;
-    }
-    
-    input {
-      border: none;
-      border-bottom: 1px solid $primary-text;
-      height: 50px;
-    }
-    
-    .message {
-      grid-column: 1 / -1;
-      border: 1px solid $primary-text;
-      height: 300px;
-      padding: 4rem 0 0 4rem;
-      resize: none;
-    }
-    
-    input::placeholder,
-    textarea::placeholder {
-      @include secondary(2.8rem, 1px);
-    }
+.contact-form-container {
+  position: relative;
+  width: 70%;
+  form{
+    position: absolute;
+    @include form($secondary, $secondary);
+    @include box-shadow(2rem, 2rem)
+  }
+}
 
-    button {
-      grid-column: 1 / -1;
-      margin: 0 2rem 2rem;
-      border: none;
-    }  
-  }  
-}  
+.comment-form-container{
+  form{
+  @include form($primary, $primary);
+  }
+}
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute !important;

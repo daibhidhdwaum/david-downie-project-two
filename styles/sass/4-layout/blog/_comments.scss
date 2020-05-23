@@ -1,0 +1,34 @@
+h3{
+  @include secondary(auto, auto);
+}
+
+// .card-container {
+//   @include flex(flex, auto, auto, auto);
+//   flex-wrap: wrap;
+//   padding: 20rem 0 12rem;
+  
+//   // TARGET EACH INDIVIDUAL CARD
+//   .card {
+//     @include flex(flex, row, center, center);
+//     flex: 1 0 50%;
+//     padding-bottom: 2rem;
+//     // TARGET EACH DIV IN SECTION
+//     div:first-child{
+//       align-self: flex-start;
+//       padding: 3.6rem 2rem;
+//       height: 100%;
+//       //  !!!!!!!!!!!! ASK IF THIS FOURTH DEEP SELECTOR IS OKAY
+//       i {
+//         @include icons;
+//       }
+//     } 
+//   }
+// }
+
+.comment{
+  @include flex(flex, auto, auto, auto);
+  div:first-child{
+    width: 30rem;
+    height: 30rem;
+  }
+}

@@ -1,4 +1,32 @@
-// .mission{
-//     flex: 1 0 calc(28% - 12%);
-//     margin-right: 12%;
-// }
+.mission{
+    flex: 1 0 calc(30%);
+    margin-right: 12%;
+}
+
+.mission-content{
+    margin: 4rem;
+}
+
+.mission-content ul{
+    display: inline;
+}
+
+// CAN'T GET LIST STYLE TYPE TO WORK
+.mission-content ul li{
+    @include secondary(inherit, inherit);
+    padding: 1rem;
+    list-style-type: circle;
+}
+
+.mission-content ul li::before{
+    color: $hilight;
+}
+
+.mission h2{
+    @include headings(2.5rem, 4rem, auto);
+
+}
+
+.mission h2:last-child{
+    color: red;
+}

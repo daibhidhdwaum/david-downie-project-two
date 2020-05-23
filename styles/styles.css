@@ -269,6 +269,13 @@ html {
   margin: 0 auto;
 }
 
+.blog-wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid orangered;
+}
+
 a {
   display: inline-block;
 }
@@ -291,7 +298,7 @@ h1 {
   line-height: auto;
   letter-spacing: auto;
   color: #F3FAFF;
-  padding: .5rem;
+  padding: 0.5rem 0;
 }
 
 h2 {
@@ -300,7 +307,7 @@ h2 {
   line-height: 9.98rem;
   letter-spacing: auto;
   color: #F3FAFF;
-  padding: .5rem;
+  padding: 0.5rem 0;
 }
 
 p {
@@ -410,22 +417,21 @@ footer {
   padding: 1.5rem;
 }
 
-.form-container {
+.contact-form-container {
   position: relative;
   width: 70%;
 }
 
-.form-container form {
+.contact-form-container form {
   position: absolute;
-  top: -20rem;
   display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
   display: grid;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   background-color: #474BB5;
+  top: -20rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   width: 100%;
   margin: 4rem;
   padding: 6rem;
@@ -433,8 +439,8 @@ footer {
           box-shadow: 2rem 2rem 0 #08FDED;
 }
 
-.form-container form input,
-.form-container form textarea {
+.contact-form-container form input,
+.contact-form-container form textarea {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   line-height: auto;
@@ -445,13 +451,14 @@ footer {
   margin: 2rem;
 }
 
-.form-container form input {
+.contact-form-container form input {
   border: none;
   border-bottom: 1px solid #F3FAFF;
   height: 50px;
+  background: #474BB5;
 }
 
-.form-container form .message {
+.contact-form-container form .message {
   grid-column: 1 / -1;
   border: 1px solid #F3FAFF;
   height: 300px;
@@ -459,8 +466,8 @@ footer {
   resize: none;
 }
 
-.form-container form input::-webkit-input-placeholder,
-.form-container form textarea::-webkit-input-placeholder {
+.contact-form-container form input::-webkit-input-placeholder,
+.contact-form-container form textarea::-webkit-input-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -469,8 +476,8 @@ footer {
   color: #F3FAFF;
 }
 
-.form-container form input:-ms-input-placeholder,
-.form-container form textarea:-ms-input-placeholder {
+.contact-form-container form input:-ms-input-placeholder,
+.contact-form-container form textarea:-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -479,8 +486,8 @@ footer {
   color: #F3FAFF;
 }
 
-.form-container form input::-ms-input-placeholder,
-.form-container form textarea::-ms-input-placeholder {
+.contact-form-container form input::-ms-input-placeholder,
+.contact-form-container form textarea::-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -489,8 +496,8 @@ footer {
   color: #F3FAFF;
 }
 
-.form-container form input::placeholder,
-.form-container form textarea::placeholder {
+.contact-form-container form input::placeholder,
+.contact-form-container form textarea::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -499,7 +506,94 @@ footer {
   color: #F3FAFF;
 }
 
-.form-container form button {
+.contact-form-container form button {
+  grid-column: 1 / -1;
+  margin: 0 2rem 2rem;
+  border: none;
+}
+
+.comment-form-container form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  background-color: #03697C;
+  top: -20rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 4rem;
+  padding: 6rem;
+}
+
+.comment-form-container form input,
+.comment-form-container form textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: auto;
+  font-weight: auto;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+  background: #03697C;
+  margin: 2rem;
+}
+
+.comment-form-container form input {
+  border: none;
+  border-bottom: 1px solid #F3FAFF;
+  height: 50px;
+  background: #03697C;
+}
+
+.comment-form-container form .message {
+  grid-column: 1 / -1;
+  border: 1px solid #F3FAFF;
+  height: 300px;
+  padding: 4rem 0 0 4rem;
+  resize: none;
+}
+
+.comment-form-container form input::-webkit-input-placeholder,
+.comment-form-container form textarea::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 1px;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+}
+
+.comment-form-container form input:-ms-input-placeholder,
+.comment-form-container form textarea:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 1px;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+}
+
+.comment-form-container form input::-ms-input-placeholder,
+.comment-form-container form textarea::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 1px;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+}
+
+.comment-form-container form input::placeholder,
+.comment-form-container form textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 1px;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+}
+
+.comment-form-container form button {
   grid-column: 1 / -1;
   margin: 0 2rem 2rem;
   border: none;
@@ -515,6 +609,104 @@ footer {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
   /* added line */
+}
+
+.blog {
+  background-color: #03697C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+}
+
+.contact {
+  background-color: #03697C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: auto;
+          flex-direction: auto;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+}
+
+.contact-page {
+  background: #03697C;
+}
+
+.programs-and-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+  padding: 3rem 0;
+  position: relative;
+}
+
+.programs-and-location div img {
+  position: absolute;
+  width: 50%;
+}
+
+.programs-and-location div .programs-img {
+  -webkit-box-shadow: 5rem 5rem 0 #08FDED;
+          box-shadow: 5rem 5rem 0 #08FDED;
+  top: -5.5rem;
+  left: -138px;
+}
+
+.programs-and-location div .locations-img {
+  -webkit-box-shadow: -5rem 5rem 0 #08FDED;
+          box-shadow: -5rem 5rem 0 #08FDED;
+  right: -134px;
+  bottom: -2.5rem;
+}
+
+.programs-and-location .programs,
+.programs-and-location .locations {
+  width: 40%;
+}
+
+.programs-and-location .locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+  padding-top: 5rem;
 }
 
 .card-container {
@@ -579,66 +771,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.programs-and-location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: auto;
-      -ms-flex-align: auto;
-          align-items: auto;
-  padding: 3rem 0;
-  position: relative;
-}
-
-.programs-and-location div img {
-  position: absolute;
-  width: 50%;
-}
-
-.programs-and-location div .programs-img {
-  -webkit-box-shadow: 5rem 5rem 0 #08FDED;
-          box-shadow: 5rem 5rem 0 #08FDED;
-  top: -5.5rem;
-  left: -138px;
-}
-
-.programs-and-location div .locations-img {
-  -webkit-box-shadow: -5rem 5rem 0 #08FDED;
-          box-shadow: -5rem 5rem 0 #08FDED;
-  right: -134px;
-  bottom: -2.5rem;
-}
-
-.programs-and-location .programs,
-.programs-and-location .locations {
-  width: 40%;
-}
-
-.programs-and-location .locations {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: auto;
-      -ms-flex-pack: auto;
-          justify-content: auto;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  text-align: right;
-  padding-top: 5rem;
 }
 
 .road-trip {
@@ -718,47 +850,70 @@ aside {
   font-size: 2.8rem;
 }
 
-.new-activities {
-  border: 2px solid #08FDED;
+.mission {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(30%);
+          flex: 1 0 calc(30%);
+  margin-right: 12%;
 }
 
-.new-activities {
+.mission-content {
+  margin: 4rem;
+}
+
+.mission-content ul {
+  display: inline;
+}
+
+.mission-content ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: inherit;
+  font-weight: inherit;
+  letter-spacing: 1px;
+  color: #F3FAFF;
+  padding: 1rem;
+  list-style-type: circle;
+}
+
+.mission-content ul li::before {
+  color: #08FDED;
+}
+
+.mission h2 {
+  font-family: "Walter Turncoat", cursive;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  letter-spacing: auto;
+  color: #F3FAFF;
+  padding: 0.5rem 0;
+}
+
+.mission h2:last-child {
+  color: red;
+}
+
+.blog-post {
   border: 8px solid #08FDED;
   border-right: none;
   border-top: none;
 }
 
-.new-activities .image-container {
-  position: relative;
-}
-
-.new-activities .image-container .image-container:first-child {
-  position: absolute;
+.blog-post img {
   -webkit-box-shadow: -2rem 2rem 0 #08FDED;
           box-shadow: -2rem 2rem 0 #08FDED;
-  right: 0;
-  border: 10px solid yellow;
 }
 
-.blog {
-  background-color: #03697C;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: auto;
-      -ms-flex-pack: auto;
-          justify-content: auto;
-  -webkit-box-align: auto;
-      -ms-flex-align: auto;
-          align-items: auto;
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: auto;
+  font-weight: auto;
+  letter-spacing: 1px;
+  color: #F3FAFF;
 }
 
-.contact {
-  background-color: #03697C;
+.comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,6 +929,7 @@ aside {
           align-items: auto;
 }
 
-.contact-page {
-  background: #03697C;
+.comment div:first-child {
+  width: 30rem;
+  height: 30rem;
 }
