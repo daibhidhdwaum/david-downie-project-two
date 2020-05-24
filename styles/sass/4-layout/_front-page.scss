@@ -1,0 +1,105 @@
+// CARDS
+.card-container {
+  @include flex(flex, auto, auto, auto);
+  flex-wrap: wrap;
+  padding: 20rem 0 12rem;
+  
+  // TARGET EACH INDIVIDUAL CARD
+  .card {
+    @include flex(flex, row, center, center);
+    flex: 1 0 50%;
+    padding-bottom: 2rem;
+    // TARGET EACH DIV IN SECTION
+    div:first-child{
+      align-self: flex-start;
+      padding: 3.6rem 2rem;
+      height: 100%;
+      //  !!!!!!!!!!!! ASK IF THIS FOURTH DEEP SELECTOR IS OKAY
+      i {
+        @include icons;
+      }
+    } 
+  }
+}
+
+// PROGRAMS AND LOCATIONS 
+.programs-and-location {
+  @include flex(flex, row, space-between, auto);
+  padding: 3rem 0;
+  position: relative;
+  // INDIVIDUAL PROGRAMS AND LOCATIONS DIVS
+    // div {
+        img {
+        width: 43%;
+        }
+        // // TARGET INDIVIDUALLY
+        .programs-img {
+        // !!!!!!!ASK ABOUT BOX SHADOW
+        position: absolute;
+        @include box-shadow(2rem, 2rem);
+          bottom: 5rem;
+        }
+        .locations-img {
+        @include box-shadow(-2rem, 2rem);
+        right: 0;
+        position: absolute;
+        top: 5rem;
+
+        }
+    // }
+    .programs,
+    .locations {
+            width: 45%;
+    }
+
+    .prog-wrapper{
+      @include prog-and-loc-wrapper(left);
+    }
+
+    .locations {
+    @include flex(flex, column, auto, flex-end);
+    text-align: right;
+    padding-top: 5rem;
+      .loc-wrapper{
+        @include prog-and-loc-wrapper(right)
+      }
+    }
+}
+
+// ROAD TRIP
+.road-trip{
+    text-align: center;
+    .wrapper{
+        div{
+            padding: 6rem 0 3rem;
+        }
+    }
+}
+
+// EVENTS
+.events{
+    @include flex(flex, row, space-between, center);
+    padding: 8rem 0;
+    // IMAGE AND WRITTEN CONTENT
+    div:nth-child(1){
+       @include box-shadow(-20px, 20px);
+        flex: 1 0 30%;
+        margin-left: 2rem;
+    }
+    div:nth-child(2){
+        margin-left: 6%;
+    }
+    
+}
+
+// GALLERY
+.gallery{
+    @include flex(flex, row, space-between, auto);
+    width: 100%;
+    padding: 8rem 0;
+}
+
+.gallery li:nth-child(2){
+    margin: 0 5rem;
+}
+

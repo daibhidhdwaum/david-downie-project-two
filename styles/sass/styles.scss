@@ -1,14 +1,11 @@
 // 1-HELPERS
-@import "./1-helpers/variables";
-@import "./1-helpers/mixins";
+// @import "./1-helpers/variables";
+@import "./variables-and-mixins";
 
 //  3-BASICS
 @import "./3-basics/setup";
 @import "./3-basics/strip";
-@import "./3-basics/base";
 @import "./3-basics/sections";
-@import "./3-basics/typography";
-@import "./3-basics/links";
 
 // 4-LAYOUT
     // all-pages
@@ -18,15 +15,11 @@
 @import "./4-layout/all-pages/form";
 @import "./4-layout/all-pages/pages";
 // front-page
-@import "./4-layout/front-page/programs-and-locations";
-@import "./4-layout/front-page/card";
-@import "./4-layout/front-page/road-trip";
-@import "./4-layout/front-page/events";
-@import "./4-layout/front-page/gallery";
+@import "./4-layout/front-page";
     // contact
-@import "./4-layout/contact/contact-details";
+@import "./4-layout/contact-details";
     // blog
-@import "./4-layout/blog/mission";
-@import "./4-layout/blog/blog-post";
-@import "./4-layout/blog/comments";
+@import "./4-layout/blog";
+
+@import "./media-queries";
 

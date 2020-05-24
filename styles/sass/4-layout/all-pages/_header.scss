@@ -1,5 +1,6 @@
 header{
-    background: url(../assets/home-header.jpg);
+    // HEADER IMAGES FOR OTHER PAGES ARE SET IN RESPECTIVE FOLDERS
+    @include header-image(home-header);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -7,17 +8,16 @@ header{
         h1{
         margin-bottom: 20rem;
     }
-    }
-
+}
 
 .header-container{
     @include flex(flex, column, space-between, auto);
     position: relative;
     height: 100vh;
     // POSITIONING OF HEADER IMAGE
-    div{
+    .home-box-image{
         position: absolute;
-        right: -136px;
+        right: -91px;
         top: 32rem;
         width: 56%;
     }

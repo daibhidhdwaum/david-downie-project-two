@@ -3,13 +3,28 @@
        @include flex(flex, row, space-between, center);
        li{
         display: inline-block;
+        position: relative;
+        .underline{
+            position: absolute;
+            top: 4.5rem;
+            width: 100%;
+            height: .5rem;
+            background-color: $hilight;
+            border-radius: 5px;
+            display: none;
+        }
          a{  
             display: inline-block;
-            padding: 2rem 2rem 2rem 0;
+            // padding: 2rem 2rem 2rem 0;
+            padding: 2rem 0;
         }
         a:hover{
             transform: scale(1.2);
             transition: ease 0.5s;
+        }
+        .underline:hover{
+            display: block;
+            transition: ease-in 1s;
         }
     }
 }

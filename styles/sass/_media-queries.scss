@@ -1,0 +1,190 @@
+@media (max-width: 1230px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .blog-wrapper {
+    width: 80%;
+  }
+  h1 {
+    font-size: 10rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  p,
+  a,
+  .mission-content ul li {
+    font-size: 1.6rem;
+  }
+
+  .mission-image {
+    width: 100%;
+  }
+
+  .mission {
+    flex-basis: calc(30% - 10%);
+    margin-right: 5%;
+  }
+
+  .contact-form-container {
+    form {
+      @include form($secondary, $secondary, 3%);
+    }
+  }
+
+  .address {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 940px){
+    .mission-image{
+        width: 110%;
+        top: 3rem;
+    }
+    input{
+        grid-column: 1 / -1;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 5rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+
+
+// CARD SECTION
+  .card-container {
+      @include flex(flex, column, center, center);
+      padding: 0;
+    .card {
+      @include flex(flex, column, center, center);
+      border: 1px solid yellow;
+      div:first-child {
+        align-self: center;
+        font-size: 6rem;
+      }
+      div:first-child i{
+          font-size: 8rem;
+            width: 12rem;
+            height: 12rem;
+      }
+      div:last-child{
+          text-align: center;
+      }
+    }
+  }
+// PROGRAMS AND LOCATIONS
+  .programs-and-location{
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid green;
+      .programs-img,
+      .locations-img{
+          position: static;
+          margin: 4rem;
+          width: calc(100% - 8rem);
+          top: 0;
+      }
+      .programs,
+      .locations{
+          width: 80%;
+          text-align: center;
+          margin: 0 auto;
+      }
+  }
+// ROAD TRIP
+  .road-trip .wrapper div{
+      padding: 0;
+  }
+// EVENTS
+  .events{
+      @include flex(flex, column, center, center);
+      div:last-child{
+          margin: 0 auto;
+          text-align: center;
+      }
+  }
+// GALLERY
+  .gallery li:nth-child(2){
+      display: none;
+  }
+
+  .gallery li:first-child{
+      margin-right: 4%;
+  }
+
+  .gallery li:last-child{
+      margin-left: 4%;
+  }
+
+  .gallery{
+      justify-content: center;
+
+  }
+
+// BLOG-PAGE
+
+      .mission-image{
+        top: 4rem;
+        left: -6%;
+        width: 100%;
+    }
+
+    .blog{
+        @include flex(flex, column, center, flex-start)
+    }
+
+     .blog-section{
+        width: 100%;
+        margin-top: 26rem;
+    }
+
+    .blog-wrapper{
+        width: 95%;
+    }
+
+    .blog-post{
+        padding-top: 40%;
+    }
+
+
+       .contact{
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .contact-form-container form{
+        position: static;
+        box-shadow: none;
+    }
+
+    .contact-aside{
+        width: 100%;
+        margin: inherit 0;
+    }
+}
+
+
+@media (max-width: 480px){
+    .gallery li:first-child{
+        display: none;
+    }
+
+    .gallery li:last-child{
+        margin: 0;
+    }
+
+ 
+    
+}

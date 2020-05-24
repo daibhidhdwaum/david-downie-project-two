@@ -1,16 +1,23 @@
 .contact-form-container {
   position: relative;
-  width: 80%;
+  width: 100%;
   form{
     position: absolute;
-    @include form($secondary, $secondary, 4rem);
-    @include box-shadow(2rem, 2rem)
-  }
+    top: -10rem;
+    right: 2rem;
+    @include form($secondary, $secondary, 4%);
+    @include box-shadow(2rem, 2rem);
+ }
 }
 
 .comment-form-container{
   form{
-  @include form($primary, $primary, 0);
+  @include form($primary, $primary, 4%);
+  }
+
+  input,
+  textarea{
+    margin: 2rem 0;
   }
 }
 
