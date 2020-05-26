@@ -149,6 +149,21 @@ footer {
   @include box-shadow(2rem, 2rem);
 }
 
+button:hover,
+button:focus-within,
+a:hover,
+a:focus-within {
+  font-size: 2.55rem;
+  transition: ease-in 0.4s;
+}
+
+button:hover,
+button:focus-within,
+ul.navbar li a:hover,
+ul.navbar li a:focus-within{
+  cursor: pointer;
+}
+
 // ******************************
 
 //**********************************
@@ -162,10 +177,10 @@ footer {
   // TARGET EACH INDIVIDUAL CARD
   .card {
     flex: 1 0 50%;
-      div:first-child {
-        align-self: flex-start;
-        padding: 3.6rem 2rem;
-        height: 100%;
+    div:first-child {
+      align-self: flex-start;
+      padding: 3.6rem 2rem;
+      height: 100%;
     }
   }
 }
@@ -178,32 +193,32 @@ footer {
 .programs-and-location {
   padding: 3rem 0;
   // INDIVIDUAL PROGRAMS AND LOCATIONS DIVS
-    img {
-      width: 43%;
-    }
-    // // TARGET INDIVIDUALLY
-    .programs-img {
-      bottom: 5rem;
-    }
-    .locations-img {
-      @include box-shadow(-2rem, 2rem);
-      top: 5rem;
-    }
-    .programs,
-    .locations {
-      width: 45%;
-    }
+  img {
+    width: 43%;
+  }
+  // // TARGET INDIVIDUALLY
+  .programs-img {
+    bottom: 5rem;
+  }
+  .locations-img {
+    @include box-shadow(-2rem, 2rem);
+    top: 5rem;
+  }
+  .programs,
+  .locations {
+    width: 45%;
+  }
 
-    .prog-wrapper {
-      @include prog-and-loc-wrapper(left);
-    }
+  .prog-wrapper {
+    @include prog-and-loc-wrapper(left);
+  }
 
-    .locations {
-      @include flex(flex, column, auto, flex-end);
-      text-align: right;
-      padding-top: 5rem;
-        .loc-wrapper {
-          @include prog-and-loc-wrapper(right);
+  .locations {
+    @include flex(flex, column, auto, flex-end);
+    text-align: right;
+    padding-top: 5rem;
+    .loc-wrapper {
+      @include prog-and-loc-wrapper(right);
     }
   }
 }
@@ -313,12 +328,12 @@ h3 {
 // COMMENTS
 .comment {
   padding: 2rem 0;
-    div:first-child {
-      width: 10%;
-    }
-    div:last-child {
-      width: calc(90% - 2rem);
-    }
+  div:first-child {
+    width: 10%;
+  }
+  div:last-child {
+    width: calc(90% - 2rem);
+  }
 }
 // *********************************
 // END OF BLOG PAGE
@@ -356,52 +371,52 @@ h3 {
   form {
     @include form($primary, 4%);
   }
-    input,
-    textarea {
-      background-color: $primary;
-      margin: 2rem 0;
-    }
+  input,
+  textarea {
+    background-color: $primary;
+    margin: 2rem 0;
+  }
 }
 
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-    input,
-    button {
-      border: none;
-    }
-    input,
-    textarea {
-      @include secondary(auto, auto);
-      background: $secondary;
-      margin: 2rem;
-    }
-    input {
-      border-bottom: 1px solid $primary-text;
-      height: 50px;
-    }
+  input,
+  button {
+    border: none;
+  }
+  input,
+  textarea {
+    @include secondary(auto, auto);
+    background: $secondary;
+    margin: 2rem;
+  }
+  input {
+    border-bottom: 1px solid $primary-text;
+    height: 50px;
+  }
 
-    .message {
-      border: 1px solid $primary-text;
-      height: 20rem;
-      padding: 2rem 0 0 2rem;
-      resize: none;
-    }
+  .message {
+    border: 1px solid $primary-text;
+    height: 20rem;
+    padding: 2rem 0 0 2rem;
+    resize: none;
+  }
 
-    input::placeholder,
-    textarea::placeholder {
-      @include secondary(2.8rem, 1px);
-    }
+  input::placeholder,
+  textarea::placeholder {
+    @include secondary(2.8rem, 1px);
+  }
 
-    .message,
-    button {
-      grid-column: 1 / -1;
-    }
+  .message,
+  button {
+    grid-column: 1 / -1;
+  }
 
-    input,
-    textarea,
-    button {
-      width: calc(100% - 4rem);
+  input,
+  textarea,
+  button {
+    width: calc(100% - 4rem);
   }
 }
 
@@ -411,7 +426,6 @@ form {
 .contact-form-container button {
   margin: 0 2rem 2rem;
 }
-
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute !important;
@@ -433,4 +447,3 @@ footer {
 }
 // *************************************
 // END OF FOOTER
-

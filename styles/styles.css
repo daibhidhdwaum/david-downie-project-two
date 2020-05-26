@@ -581,6 +581,22 @@ footer {
           box-shadow: 2rem 2rem 0 #08FDED;
 }
 
+button:hover,
+button:focus-within,
+a:hover,
+a:focus-within {
+  font-size: 2.55rem;
+  -webkit-transition: ease-in 0.4s;
+  transition: ease-in 0.4s;
+}
+
+button:hover,
+button:focus-within,
+ul.navbar li a:hover,
+ul.navbar li a:focus-within {
+  cursor: pointer;
+}
+
 .card-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
