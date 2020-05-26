@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/80d230e595.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/favicon.ico">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>FunPlace</title>
 </head>
@@ -15,14 +16,16 @@
     <header class="contact-header">
         <div class="wrapper">
             <nav>
-                <ul>
+                <label for="toggle"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle" />
+                <ul class="navbar">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Contact</h1>
+            <h1 class="alt-heading-size">Get in Touch</h1>
         </div>
     </header><!-- END OF HEADER -->
 
@@ -32,29 +35,24 @@
                 <div class="contact">
                     <!-- FLEXES ALL CONTENT ON PAGE -->
                     <aside class="contact-aside">
-                        <!-- <div> -->
-                            <!-- <div class="wrapper"> -->
-
-                                <ul class="social-icons">
-                                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                </ul>
-                                <address class="address">
-                                    <a href="#">info@email.com</a></br>
-                                    </br>
-                                    123-456-7890</br>
-                                    123 Queen St West, Unit 1</br>
-                                    Toronto, Ontario</br>
-                                    M5V 2D5</br>
-                                </address>
-                            <!-- </div> -->
-                        <!-- </div> -->
+                        <ul class="social-icons">
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                        <address class="address">
+                            <a href="#">info@email.com</a></br>
+                            </br>
+                            123-456-7890</br>
+                            123 Queen St West, Unit 1</br>
+                            Toronto, Ontario</br>
+                            M5V 2D5</br>
+                        </address>
                     </aside>
                     <!-- END OF SECTION ONE -->
                     <div class="contact-form-container">
-                        <form action="">
+                        <form action="" class="contact-form">
                             <label for="name" class="visually-hidden">Name</label>
                             <input type="text" id="name" placeholder="Name" class="name">
                             <label for="email" class="visually-hidden">Email</label>

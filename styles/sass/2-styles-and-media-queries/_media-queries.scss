@@ -1,0 +1,269 @@
+@media (max-width: 1230px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .home-box-image {
+    bottom: -15rem;
+    width: 44%;
+  }
+
+  .blog-wrapper {
+    width: 80%;
+  }
+  h1{
+    font-size: 10rem;
+  }
+
+  .alt-heading-size{
+    font-size: 9.6rem;
+  }
+
+  h2,
+  .programs-and-location h2 {
+    font-size: 4rem;
+  }
+
+  p,
+  a,
+  .mission-content ul li,
+  .address {
+    font-size: 1.6rem;
+  }
+
+  .mission-image {
+    width: 100%;
+  }
+
+  .mission {
+    flex-basis: calc(30% - 10%);
+    margin-right: 5%;
+  }
+
+  .contact-form-container {
+    form {
+      @include form($secondary, 3%);
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .mission-image {
+    width: 110%;
+    top: 3rem;
+  }
+  input {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .programs-and-location,
+  .gallery {
+    justify-content: center;
+  }
+
+  .home-header,
+  .blog-header,
+  .contact-header {
+    background-position-x: 20%;
+    background-position-y: top;
+    height: 50rem;
+  }
+
+  ul.navbar,
+  input[type="checkbox"]:checked + ul.navbar,
+  ul.navbar a {
+    display: inline-block;
+  }
+
+  ul.navbar,
+  ul.navbar li,
+  ul.navbar a,
+  .mission-image,
+  .blog-section,
+  .contact-aside {
+    width: 100%;
+  }
+
+  .card-container,
+  .card {
+    @include flex(flex, column, center, center);
+  }
+
+  .header-container {
+    height: 0;
+  }
+
+  .home-box-image {
+    bottom: 27%;
+    width: 50%;
+  }
+
+  /* slide menu */
+
+  ul.navbar {
+    position: absolute;
+    top: 10rem;
+    right: -100%;
+    background-color: #f4f4f4;
+    z-index: 10;
+    background-color: $secondary;
+  }
+
+  ul.navbar li {
+    padding: 0.5rem;
+  }
+
+  input[type="checkbox"]:checked + ul.navbar {
+    right: 0;
+  }
+
+  ul.navbar a:hover {
+    width: 20%;
+  }
+
+  label[for="toggle"] i {
+    color: #f4f4f4;
+    font-size: 5rem;
+    z-index: 0;
+    display: block;
+  }
+
+  label[for="toggle"] {
+    @include flex(flex, row, flex-end, center);
+    height: 10rem;
+  }
+
+  h1,
+  .alt-heading-size{
+    font-size: 7rem;
+    margin: 0;
+  }
+
+  h2,
+  .programs-and-location h2 {
+    font-size: 3rem;
+  }
+
+  // CARD SECTION
+  .card-container {
+    padding: 8rem 0 0;
+    .card {
+      div:first-child {
+        align-self: center;
+        font-size: 6rem;
+      }
+      div:first-child i {
+        font-size: 8rem;
+        width: 12rem;
+        height: 12rem;
+      }
+    }
+  }
+
+  .card div:last-child,
+  .events div:last-child,
+  .programs,
+  .programs-and-location .locations {
+    text-align: center;
+  }
+
+  .programs,
+  .locations,
+  .events div:last-child {
+    margin: 0 auto;
+  }
+  // PROGRAMS AND LOCATIONS
+  .programs-and-location {
+    flex-direction: column;
+    .programs-img,
+    .locations-img {
+      position: static;
+      margin: 4rem;
+      width: calc(100% - 8rem);
+      top: 0;
+    }
+    .programs,
+    .locations {
+      width: 80%;
+    }
+  }
+  // ROAD TRIP
+  .road-trip .wrapper div {
+    padding: 0;
+  }
+
+  // POOL IMAGE
+  .full-span-image {
+    object-fit: cover;
+    width: 100%;
+    height: 30rem;
+  }
+  // EVENTS
+  .events {
+    @include flex(flex, column, center, center);
+  }
+  // GALLERY
+  ul.navbar,
+  .gallery li:nth-child(2) {
+    display: none;
+  }
+
+  .gallery li:first-child {
+    margin-right: 4%;
+  }
+
+  .gallery li:last-child {
+    margin-left: 4%;
+  }
+
+  // BLOG-PAGE
+  .mission-image {
+    top: 4rem;
+    left: -6%;
+  }
+
+  .blog {
+    @include flex(flex, column, center, flex-start);
+  }
+
+  .blog-section {
+    margin-top: 26rem;
+  }
+
+  .blog-wrapper {
+    width: 95%;
+  }
+
+  .blog-post {
+    padding-top: 40%;
+  }
+
+  .contact {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  .contact-form-container form {
+    position: static;
+    box-shadow: none;
+  }
+
+  .contact-aside {
+    margin: inherit 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-box-image {
+    width: 70%;
+  }
+  .gallery li:first-child {
+    display: none;
+  }
+
+  .gallery li:last-child {
+    margin: 0;
+  }
+}

@@ -20,7 +20,6 @@ a {
 
 img{
     display: block;
-    width: 100%;
 }
 
 html{
@@ -28,17 +27,23 @@ html{
 }
 
 // BASE STYLING
+img,
+.wrapper,
+.blog-wrapper{
+    width: 100%
+}
+
+.wrapper,
+.blog-wrapper{
+    margin: 0 auto;
+}
+
 .wrapper{
     max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    border: 1px solid red;
 }
 
 .blog-wrapper{
     max-width: 650px;
-    width: 100%;
-    margin: 0 auto
 }
 
 body{
@@ -66,8 +71,16 @@ h1{
     @include headings(14.52rem, auto, auto);
 }
 
+.alt-heading-size{
+    @include headings(12.5rem, 12.56rem, auto)
+}
+
 h2{
     @include headings(4.5rem, 9.98rem, auto)
+}
+
+.programs-and-location h2{
+    @include headings(4rem, 5.8rem, 1.3px)
 }
 
 p{

@@ -1,25 +1,9 @@
-// 1-HELPERS
-// @import "./1-helpers/variables";
-@import "./variables-and-mixins";
+// 1-PAGE SETUP
+@import "./1-page-setup/setup";
+@import "./1-page-setup/variables-and-mixins";
+@import "./1-page-setup/base-styles";
 
-//  3-BASICS
-@import "./3-basics/setup";
-@import "./3-basics/strip";
-@import "./3-basics/sections";
-
-// 4-LAYOUT
-    // all-pages
-@import "./4-layout/all-pages/header";
-@import "./4-layout/all-pages/nav";
-@import "./4-layout/all-pages/footer";
-@import "./4-layout/all-pages/form";
-@import "./4-layout/all-pages/pages";
-// front-page
-@import "./4-layout/front-page";
-    // contact
-@import "./4-layout/contact-details";
-    // blog
-@import "./4-layout/blog";
-
-@import "./media-queries";
+// 2- STYLES AND MEDIA QUERIES
+@import "./2-styles-and-media-queries/full-page";
+@import "./2-styles-and-media-queries/media-queries"
 

@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/80d230e595.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/favicon.ico">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>FunPlace</title>
 </head>
@@ -16,25 +17,24 @@
         <div class="wrapper">
             <div class="header-container">
                 <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a>
-                            <div class="underline"></div>
-                        </li>
+                    <label for="toggle"><i class="fa fa-bars"></i></label>
+                    <input type="checkbox" id="toggle" name="toggle" />
+                    <ul class="navbar">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <h1>FunPlace</h1>
-                <div class="home-box-image">
-                    <img src="./assets/home-box-header.jpg" alt="Child playing on skateboard">
-                </div>
             </div>
+        </div>
+        <div class="home-box-image">
+            <img src="./assets/home-box-header.jpg" alt="Child playing on skateboard">
         </div>
     </header><!-- END OF HEADER -->
 
     <section>
-        <!-- <div> -->
         <div class="wrapper">
             <div class="card-container" id="about">
                 <div class="card">
@@ -91,44 +91,38 @@
                 </div>
             </div>
         </div>
-        <!-- </div> -->
     </section><!-- END OF SECTION ONE -->
 
     <section>
         <div class="alt-background">
-            <!-- <div class="wrapper"> -->
-            <!-- <div> -->
-                <div class="programs-and-location">
-                    <div>
-                        <img src="./assets/left-image.jpg" alt="Child smiling at camera" class="programs-img">
-                    </div>
-                    <div class="programs">
-                        <div class="prog-wrapper">
-                            <h2>Our Programs</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime porro ipsa impedit
-                                accusantium
-                                sapiente assumenda recusandae, corrupti tempora, ea minima maiores?</p>
-                            <a href="" class="read-more">Read More</a>
-                        </div>
+            <div class="programs-and-location">
+                <div>
+                    <img src="./assets/left-image.jpg" alt="Child smiling at camera" class="programs-img">
+                </div>
+                <div class="programs">
+                    <div class="prog-wrapper">
+                        <h2>Our Programs</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime porro ipsa impedit
+                            accusantium
+                            sapiente assumenda recusandae, corrupti tempora, ea minima maiores?</p>
+                        <a href="" class="read-more">Read More</a>
                     </div>
                 </div>
-                <div class="programs-and-location">
-                    <div class="locations">
-                        <div class="loc-wrapper">
-                            <h2>New Locations</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime porro ipsa impedit
-                                accusantium
-                                sapiente assumenda recusandae, corrupti tempora, ea minima maiores?</p>
-                            <a href="" class="read-more">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="./assets/right-image.jpg" alt="Child playing with toy" class="locations-img">
+            </div>
+            <div class="programs-and-location">
+                <div class="locations">
+                    <div class="loc-wrapper">
+                        <h2>New Locations</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime porro ipsa impedit
+                            accusantium
+                            sapiente assumenda recusandae, corrupti tempora, ea minima maiores?</p>
+                        <a href="" class="read-more">Read More</a>
                     </div>
                 </div>
-            <!-- </div> -->
-            <!-- </div> -->
-
+                <div>
+                    <img src="./assets/right-image.jpg" alt="Child playing with toy" class="locations-img">
+                </div>
+            </div>
         </div>
     </section><!-- END OF SECTION TWO -->
 
@@ -153,7 +147,7 @@
     </section><!-- END OF SECTION THREE -->
 
     <section>
-        <img src="./assets/banner.jpg" alt="People in outdoor pool">
+        <img src="./assets/banner.jpg" alt="People in outdoor pool" class="full-span-image">
     </section><!-- END OF SECTION FOUR -->
 
     <section>

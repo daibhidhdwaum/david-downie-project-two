@@ -67,50 +67,8 @@ $contact-header-image: url(../../../assets/contact-header.jpg);
   box-shadow: $horizontal-offset $vertical-offset 0 $hilight;
 }
 
-@mixin form($background-colour, $input-background, $padding) {
-  display: grid;
-  background-color: $background-colour;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
+@mixin form($background-colour, $padding) {
+  background: $background-colour;
   padding: $padding;
 
-    input,
-    textarea {
-        @include secondary(auto, auto);
-        background: $input-background;
-        margin: 2rem;
-        
-    }
-    input {
-        border: none;
-        border-bottom: 1px solid $primary-text;
-        height: 50px;
-        background: $input-background;
-    }
-
-    .message {
-        grid-column: 1 / -1;
-        border: 1px solid $primary-text;
-        height: 20rem;
-        padding: 2rem 0 0 2rem;
-        resize: none;
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-        @include secondary(2.8rem, 1px);
-    }
-
-    button {
-        grid-column: 1 / -1;
-        margin: 0 2rem 2rem;
-        border: none;
-    }
-
-    input,
-    textarea,
-    button{
-      width: calc(100% - 4rem);
-    }
 }
-
