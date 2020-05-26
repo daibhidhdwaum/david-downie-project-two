@@ -5,11 +5,11 @@ $primary-text: #F3FAFF;
 $secondary-text: #044799;
 $hilight: #08FDED;
 
-$home-header-image: url(../../../assets/home-header.jpg);
+$home-header-image: url(../../../assets/images/home-header.jpg);
 
-$blog-header-image: url(../../../assets/blog-header.jpg);
+$blog-header-image: url(../../../assets/images/blog-header.jpg);
 
-$contact-header-image: url(../../../assets/contact-header.jpg);
+$contact-header-image: url(../../../assets/images/contact-header.jpg);
 
 // MIXINS
 @mixin prog-and-loc-wrapper($margin){
@@ -19,7 +19,7 @@ $contact-header-image: url(../../../assets/contact-header.jpg);
 }
 
 @mixin header-image($image){
-  background-image: url(../assets/#{$image}.jpg);
+  background-image: url(../assets/images/#{$image}.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;

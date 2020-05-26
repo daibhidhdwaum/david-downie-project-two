@@ -151,8 +151,8 @@ footer {
 
 button:hover,
 button:focus-within,
-a:hover,
-a:focus-within {
+.read-more:hover,
+.read-more:focus-within {
   font-size: 2.55rem;
   transition: ease-in 0.4s;
 }

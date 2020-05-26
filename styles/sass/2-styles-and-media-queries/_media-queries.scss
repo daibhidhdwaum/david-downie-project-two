@@ -1,4 +1,11 @@
 @media (max-width: 1230px) {
+  p,
+  a,
+  .mission-content ul li,
+  .address {
+    font-size: 1.6rem;
+  }
+
   .wrapper {
     width: 90%;
   }
@@ -24,13 +31,6 @@
     font-size: 4rem;
   }
 
-  p,
-  a,
-  .mission-content ul li,
-  .address {
-    font-size: 1.6rem;
-  }
-
   .mission-image {
     width: 100%;
   }
@@ -46,16 +46,19 @@
     }
   }
 }
+// END OF 1230PX
 
 @media (max-width: 940px) {
   .mission-image {
     width: 110%;
     top: 3rem;
   }
+
   input {
     grid-column: 1 / -1;
   }
 }
+// END OF 940PX
 
 @media (max-width: 768px) {
   .programs-and-location,
@@ -91,17 +94,39 @@
     @include flex(flex, column, center, center);
   }
 
+  h1,
+  .alt-heading-size{
+    font-size: 5rem;
+    margin: 0;
+  }
+
+  h2,
+  .programs-and-location h2 {
+    font-size: 3rem;
+  }
+
+  .card div:last-child,
+  .events div:last-child,
+  .programs,
+  .programs-and-location .locations {
+    text-align: center;
+  }
+
+  .programs,
+  .locations,
+  .events div:last-child {
+    margin: 0 auto;
+  }
+
   .header-container {
     height: 0;
   }
 
   .home-box-image {
-    bottom: 48%;
-    width: 50%;
+    display: none;
   }
 
   /* slide menu */
-
   ul.navbar {
     position: absolute;
     top: 10rem;
@@ -135,17 +160,6 @@
     height: 10rem;
   }
 
-  h1,
-  .alt-heading-size{
-    font-size: 5rem;
-    margin: 0;
-  }
-
-  h2,
-  .programs-and-location h2 {
-    font-size: 3rem;
-  }
-
   // CARD SECTION
   .card-container {
     padding: 8rem 0 0;
@@ -162,31 +176,19 @@
     }
   }
 
-  .card div:last-child,
-  .events div:last-child,
-  .programs,
-  .programs-and-location .locations {
-    text-align: center;
-  }
-
-  .programs,
-  .locations,
-  .events div:last-child {
-    margin: 0 auto;
-  }
   // PROGRAMS AND LOCATIONS
   .programs-and-location {
     flex-direction: column;
-    .programs-img,
-    .locations-img {
-      position: static;
-      margin: 4rem;
-      width: calc(100% - 8rem);
-      top: 0;
-    }
-    .programs,
-    .locations {
-      width: 80%;
+      .programs-img,
+      .locations-img {
+        position: static;
+        margin: 4rem;
+        width: calc(100% - 8rem);
+        top: 0;
+      }
+      .programs,
+      .locations {
+        width: 80%;
     }
   }
   // ROAD TRIP
@@ -254,12 +256,9 @@
     margin: inherit 0;
   }
 }
+// END OF 768PX
 
 @media (max-width: 480px) {
-  .home-box-image {
-    width: 70%;
-  }
-
   .alt-heading-size{
     line-height: 5rem;
     padding-top: 4.2rem;
