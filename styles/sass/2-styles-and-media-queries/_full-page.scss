@@ -199,18 +199,18 @@ ul.navbar li a:focus-within{
 
 // PROGRAMS AND LOCATIONS
 .programs-and-location {
-  padding: 3rem 0;
+  padding: 8rem 0 4rem;
   // INDIVIDUAL PROGRAMS AND LOCATIONS DIVS
   img {
     width: 43%;
   }
   // // TARGET INDIVIDUALLY
   .programs-img {
-    bottom: 5rem;
+    bottom: 8rem;
   }
   .locations-img {
     @include box-shadow(-2rem, 2rem);
-    top: 5rem;
+    top: 10rem;
   }
   .programs,
   .locations {

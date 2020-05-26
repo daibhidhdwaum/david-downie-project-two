@@ -643,7 +643,7 @@ ul.navbar li a:focus-within {
 }
 
 .programs-and-location {
-  padding: 3rem 0;
+  padding: 8rem 0 4rem;
 }
 
 .programs-and-location img {
@@ -651,13 +651,13 @@ ul.navbar li a:focus-within {
 }
 
 .programs-and-location .programs-img {
-  bottom: 5rem;
+  bottom: 8rem;
 }
 
 .programs-and-location .locations-img {
   -webkit-box-shadow: -2rem 2rem 0 #08FDED;
           box-shadow: -2rem 2rem 0 #08FDED;
-  top: 5rem;
+  top: 10rem;
 }
 
 .programs-and-location .programs,
