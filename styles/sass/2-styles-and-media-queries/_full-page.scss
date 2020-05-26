@@ -1,11 +1,39 @@
+//  NAV BAR
+ul.navbar {
+  width: 40%;
+  padding-top: 3rem;
+  li {
+    display: inline-block;
+    padding: 0.5rem 0;
+
+    a {
+      padding: 1rem 0;
+      border-bottom: 4px solid transparent;
+    }
+    a.home,
+    a.blog,
+    a.contact,
+    a:hover {
+      border-bottom: 4px solid $hilight;
+    }
+  }
+}
+
+input[type="checkbox"],
+label[for="toggle"] i {
+  display: none;
+}
+
 header {
-  // HEADER IMAGES FOR OTHER PAGES ARE SET IN RESPECTIVE FOLDERS
   @include header-image(home-header);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  h1 {
-    margin-bottom: 20rem;
+    h1 {
+      margin-bottom: 20rem;
+    }
+    .alt-heading-size{
+      margin-top: 10rem;
   }
 }
 
@@ -18,27 +46,7 @@ header {
   width: 42%;
 }
 
-//  NAV BAR
-ul {
-  width: 40%;
-  li {
-    display: inline-block;
-    padding: 0.5rem 0;
 
-    a {
-      padding: 1rem 0;
-      border-bottom: 4px solid transparent;
-    }
-    a:hover {
-      border-bottom: 4px solid $hilight;
-    }
-  }
-}
-
-input[type="checkbox"],
-label[for="toggle"] i {
-  display: none;
-}
 
 // *****************************
 // MULTIPLE PAGES
@@ -172,7 +180,7 @@ ul.navbar li a:focus-within{
 // CARDS
 .card-container {
   flex-wrap: wrap;
-  padding: 20rem 0 12rem;
+  padding: 24rem 0 16rem;
 
   // TARGET EACH INDIVIDUAL CARD
   .card {
@@ -363,7 +371,7 @@ h3 {
   form {
     top: -10rem;
     right: 2rem;
-    @include form($secondary, 4%);
+    @include form($secondary, 6%);
   }
 }
 
