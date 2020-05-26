@@ -1052,7 +1052,7 @@ footer {
     height: 0;
   }
   .home-box-image {
-    bottom: 27%;
+    bottom: 48%;
     width: 50%;
   }
   /* slide menu */
@@ -1097,7 +1097,7 @@ footer {
   }
   h1,
   .alt-heading-size {
-    font-size: 7rem;
+    font-size: 5rem;
     margin: 0;
   }
   h2,
@@ -1228,6 +1228,10 @@ footer {
 @media (max-width: 480px) {
   .home-box-image {
     width: 70%;
+  }
+  .alt-heading-size {
+    line-height: 5rem;
+    padding-top: 4.2rem;
   }
   .gallery li:first-child {
     display: none;
